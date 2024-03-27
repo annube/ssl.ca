@@ -40,9 +40,11 @@ string_mask			= nombstr
 req_extensions			= v3_req
 [ req_distinguished_name ]
 commonName			= Common Name (eg, John Doe)
+commonName_default		= John Doe
 commonName_max			= 64
 emailAddress			= Email Address
 emailAddress_max		= 40
+emailAddress_default		= $CERT
 [ v3_req ]
 subjectKeyIdentifier=hash
 basicConstraints = critical,CA:FALSE
